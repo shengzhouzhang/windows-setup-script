@@ -8,3 +8,4 @@ cinst git.install
 cinst SublimeText2.PackageControl -Version 1.6.3
 cinst VisualStudio2013Professional
 cinst resharper
+cinst MsSqlServer2012Express
