@@ -1,11 +1,14 @@
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
-Enable-RemoteDesktop
 
 cinst java.jdk
 cinst python
 cinst GoogleChrome.Canary
+cinst GoogleChrome.Dev
 cinst git.install
+cinst SublimeText3
 cinst SublimeText2.PackageControl -Version 1.6.3
+cinst googledrive
+cinst PowerShell
+
 cinst VisualStudio2013Professional
 cinst resharper
 cinst MsSqlServer2012Express
