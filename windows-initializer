@@ -1,5 +1,5 @@
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 Enable-RemoteDesktop
 
-cinst git.install
-cinst notepadplusplus.install
+cinst -force git.install
+cinst -force notepadplusplus.install
