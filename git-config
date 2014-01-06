@@ -1,4 +1,0 @@
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
-Enable-RemoteDesktop
-
-bash C:\Users\stevenz\Desktop\set_up_git_README.sh
