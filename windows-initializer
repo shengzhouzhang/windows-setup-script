@@ -5,6 +5,6 @@ cinst java.jdk
 cinst python
 cinst GoogleChrome.Canary
 cinst git.install
-cinst notepadplusplus.install
+cinst SublimeText2.PackageControl -Version 1.6.3
 cinst VisualStudio2012Professional
 cinst resharper
