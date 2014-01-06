@@ -1,5 +1,4 @@
 
-cinst java.jdk
 cinst python
 cinst GoogleChrome.Canary
 cinst GoogleChrome.Dev
@@ -8,6 +7,7 @@ cinst SublimeText3
 cinst SublimeText2.PackageControl -Version 1.6.3
 cinst googledrive
 cinst PowerShell
+cinst java.jdk
 
 cinst VisualStudio2013Professional
 cinst resharper
