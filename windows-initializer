@@ -10,7 +10,7 @@ cinst SublimeText2.PackageControl -Version 1.6.3
 
 cinst java.jdk
 cinst python
-cinst googledrive
+# cinst googledrive
 
 cinst VisualStudio2013Professional
 cinst resharper
