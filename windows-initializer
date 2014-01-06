@@ -1,5 +1,10 @@
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
 Enable-RemoteDesktop
 
-cinst -force git.install
-cinst -force notepadplusplus.install
+cinst java.jdk
+cinst python
+cinst GoogleChrome.Canary
+cinst git.install
+cinst notepadplusplus.install
+cinst VisualStudio2012Professional
+cinst resharper
