@@ -3,10 +3,10 @@
 [string]$shared=$dev + "\shared"
 [string]$remote="r:\picnet\shared_lib.git"
 
-mkdir $dev
-mkdir $projects
+IF ( !( Test-Path -Path $dev ) ) { mkdir $dev }
+IF ( !( Test-Path -Path $projects ) ) { mkdir $projects }
 
-IF ( Test-Path -Path $fileName ) { echo $shared Exists. } ElSE { git clone $remote $shared }
+IF ( Test-Path -Path $shared ) { echo $shared Exists. } ElSE { git clone $remote $shared }
 
 [string]$fileName="windows-best-performance.reg"
 [string]$current=$pwd
