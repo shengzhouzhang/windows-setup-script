@@ -50,3 +50,5 @@ IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo "Could not find
 IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo "Could not find $filePath." }
 
 echo "Done. Please review the log info above."
+
+start /wait http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/powershell-script
