@@ -1,3 +1,6 @@
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Enable-RemoteDesktop
+
 cinst PowerShell
 
 cinst git.install
