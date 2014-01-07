@@ -1,6 +1,21 @@
-git clone r:\picnet\shared_lib.git C:\dev\shared
+[string]$dev="C:\dev"
+[string]$projects=$dev + "\projects"
+[string]$shared=$dev + "\shared"
+[string]$remote="r:\picnet\shared_lib.git"
 
-Reg import C:\Users\stevenz\Desktop\windows-best-performance.reg
+mkdir $dev
+mkdir $projects
 
-net stop themes
-net start themes
+IF ( Test-Path -Path $fileName ) { echo $shared Exists. } ElSE { git clone $remote $shared }
+
+[string]$fileName="windows-best-performance.reg"
+[string]$current=$pwd
+[string]$filePath=$current + "\" + $fileName
+
+echo Importing $fileName
+
+IF ( Test-Path -Path $fileName ) { Reg import $fileName } ELSE { echo Could not find $fileName. }
+
+echo Restarting themes
+IF ( Test-Path -Path $fileName ) { net stop themes }
+IF ( Test-Path -Path $fileName ) { net start themes }
