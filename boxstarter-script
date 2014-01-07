@@ -20,4 +20,4 @@ cinst MsSqlServer2012Express
 
 cinst boxstarter.chocolatey
 
-# start "http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/powershell-script"
+Start("http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/powershell-script")
