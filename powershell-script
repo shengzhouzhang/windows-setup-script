@@ -12,10 +12,10 @@ IF ( Test-Path -Path $shared ) { echo $shared Exists. } ElSE { git clone $remote
 [string]$current=$pwd
 [string]$filePath=$current + "\" + $fileName
 
-echo Importing $fileName
+echo Importing $filePath
 
-IF ( Test-Path -Path $fileName ) { Reg import $fileName } ELSE { echo Could not find $fileName. }
+IF ( Test-Path -Path $filePath ) { Reg import $fileName } ELSE { echo Could not find $fileName. }
 
 echo Restarting themes
-IF ( Test-Path -Path $fileName ) { net stop themes }
-IF ( Test-Path -Path $fileName ) { net start themes }
+IF ( Test-Path -Path $filePath ) { net stop themes }
+IF ( Test-Path -Path $filePath ) { net start themes }
