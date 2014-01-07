@@ -24,3 +24,5 @@ IF ( Test-Path -Path $filePath ) { Reg import $filePath } ELSE { echo "Could not
 echo Restarting themes
 IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo "Could not find $filePath." }
 IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo "Could not find $filePath." }
+
+echo "Done. Please review the log info above."
