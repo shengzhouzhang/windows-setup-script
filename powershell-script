@@ -17,5 +17,5 @@ echo Importing $filePath
 IF ( Test-Path -Path $filePath ) { Reg import $filePath } ELSE { echo Could not find $filePath. }
 
 echo Restarting themes
-IF ( Test-Path -Path $filePath ) { net stop themes }
-IF ( Test-Path -Path $filePath ) { net start themes }
+IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo Could not find $filePath. }
+IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo Could not find $filePath. }
