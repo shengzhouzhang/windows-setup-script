@@ -5,12 +5,12 @@ echo "=======================" "Running Setup Script" "======================="
 [string]$shared=$dev + "\shared"
 
 # hardcode git remote path
-[string]$lib="C:\dev\projects\test\.git"
+#[string]$lib="C:\dev\projects\test\.git"
 
 IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev Exists." }
 IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects Exists." }
 
-IF ( Test-Path -Path $shared ) { echo "$shared Exists." } ElSE { git clone $lib $shared }
+IF ( Test-Path -Path $shared ) { echo "$shared Exists." } ElSE { git clone C:\dev\projects\test\.git C:\dev\shared }
 
 # [string]$fileName="windows-best-performance.reg"
 # [string]$current=$pwd
