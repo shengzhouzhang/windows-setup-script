@@ -20,9 +20,4 @@ cinst MsSqlServer2012Express
 
 cinst boxstarter.chocolatey
 
-echo "Installation finished."
-
-# the below is powershell script 
-echo "=======================" "Running Setting Scripts" "======================="
-
-
+echo "Done."
