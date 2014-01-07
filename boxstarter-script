@@ -20,35 +20,4 @@ cinst MsSqlServer2012Express
 
 cinst boxstarter.chocolatey
 
-echo "=======================" "Running Setup Script" "======================="
-
-[string]$dev="C:\dev"
-[string]$projects=$dev + "\projects"
-[string]$shared=$dev + "\shared"
-
-# hardcode git remote path
-[string]$remote="C:\\dev\\projects\\test\\.git"
-
-IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev Exists." }
-IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects Exists." }
-
-IF ( Test-Path -Path $shared ) { echo "$shared Exists." } ElSE { git clone $remote $shared }
-
-# [string]$fileName="windows-best-performance.reg"
-# [string]$current=$pwd
-# [string]$filePath=$current + "\" + $fileName
-
-# hardcode reg file path
-[string]$filePath="C:\windows-best-performance.reg"
-
-echo "Importing $filePath."
-
-IF ( Test-Path -Path $filePath ) { Reg import $filePath } ELSE { echo "Could not find $filePath." }
-
-echo Restarting themes
-IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo "Could not find $filePath." }
-IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo "Could not find $filePath." }
-
-echo "Done. Please review the log info above."
-
 start /wait http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/powershell-script
