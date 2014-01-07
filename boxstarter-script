@@ -22,7 +22,7 @@ cinst boxstarter.chocolatey
 echo "Installation finished."
 
 # the below is powershell script 
-echo "==================" "Running Setting Scripts" "=================="
+echo "=======================" "Running Setting Scripts" "======================="
 
 [string]$dev="C:\dev"
 [string]$projects=$dev + "\projects"
