@@ -33,6 +33,8 @@ echo "=======================" "Running Setting Scripts" "======================
 # hardcode git remote path
 [string]$remote="r:\picnet\shared_lib.git"
 
+echo "Trying to git clone $remote $shared"
+
 IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev already Exists." }
 IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects already Exists." }
 
