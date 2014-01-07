@@ -1,3 +1,5 @@
+echo "=======================" "Running Setup Script" "======================="
+
 [string]$dev="C:\dev"
 [string]$projects=$dev + "\projects"
 [string]$shared=$dev + "\shared"
