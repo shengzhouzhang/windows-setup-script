@@ -2,7 +2,6 @@ Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFile
 Disable-UAC
 Enable-RemoteDesktop 
 
-
 cinst PowerShell
 
 cinst git.install
@@ -26,34 +25,4 @@ echo "Installation finished."
 # the below is powershell script 
 echo "=======================" "Running Setting Scripts" "======================="
 
-[string]$dev="C:\dev"
-[string]$projects=$dev + "\projects"
-[string]$shared=$dev + "\shared"
-
-IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev already Exists." }
-IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects already Exists." }
-
-# hardcode git remote path
-[string]$remote="C:\dev\projects\test\.git"
-
-IF ( Test-Path -Path $shared ) { echo "$shared already Exists." } ElSE { git clone $remote $shared }
-
-# [string]$fileName="windows-best-performance.reg"
-# [string]$current=$pwd
-# [string]$filePath=$current + "\" + $fileName
-
-# hardcode reg file path
-[string]$filePath="C:\windows-best-performance.reg"
-
-echo "Importing $filePath."
-
-IF ( Test-Path -Path $filePath ) { Reg import $filePath } ELSE { echo "Could not find $filePath." }
-
-echo Restarting themes
-IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo "Could not find $filePath." }
-IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo "Could not find $filePath." }
-
-echo "Done. Please review the log info above."
-
-sh C:\set_up_git_README
 
