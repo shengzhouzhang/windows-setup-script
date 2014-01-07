@@ -14,7 +14,7 @@ IF ( Test-Path -Path $shared ) { echo $shared Exists. } ElSE { git clone $remote
 
 echo Importing $filePath
 
-IF ( Test-Path -Path $filePath ) { Reg import $fileName } ELSE { echo Could not find $fileName. }
+IF ( Test-Path -Path $filePath ) { Reg import $filePath } ELSE { echo Could not find $filePath. }
 
 echo Restarting themes
 IF ( Test-Path -Path $filePath ) { net stop themes }
