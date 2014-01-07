@@ -34,12 +34,12 @@ echo "=======================" "Running Setting Scripts" "======================
 # [string]$remote="r:\picnet\shared_lib.git"
 
 [string]$remote="C:\dev\projects\test.git"
-echo "Trying to git clone $remote $shared"
 
 IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev already Exists." }
 IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects already Exists." }
 
-IF ( Test-Path -Path $shared ) { echo "$shared already Exists." } ElSE { git clone $remote $shared }
+echo "Trying to do git clone $remote $shared"
+IF ( Test-Path -Path $shared ) { echo "$shared already Exists." } ElSE { git clone $remote }
 
 # [string]$fileName="windows-best-performance.reg"
 # [string]$current=$pwd
