@@ -1,1 +1,6 @@
 git clone r:\picnet\shared_lib.git C:\dev\shared
+
+Reg import %~p0windows-best-performance.reg
+
+net stop themes
+net start themes
