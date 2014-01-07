@@ -27,7 +27,7 @@ echo "=======================" "Running Setup Script" "======================="
 [string]$shared=$dev + "\shared"
 
 # hardcode git remote path
-[string]$remote="C:\dev\projects\test\.git"
+[string]$remote="C:\\dev\\projects\\test\\.git"
 
 IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev Exists." }
 IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects Exists." }
