@@ -39,7 +39,7 @@ IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev already Exists
 IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects already Exists." }
 
 echo "Trying to do git clone $remote $shared"
-IF ( Test-Path -Path $shared ) { echo "$shared already Exists." } ElSE { git clone $remote }
+IF ( Test-Path -Path $shared ) { echo "$shared already Exists." } ElSE { git clone $remote $shared }
 
 # [string]$fileName="windows-best-performance.reg"
 # [string]$current=$pwd
@@ -57,3 +57,6 @@ IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo "Could not find
 IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo "Could not find $filePath." }
 
 echo "Done. Please review the log info above."
+
+sh 
+
