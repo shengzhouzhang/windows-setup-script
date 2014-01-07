@@ -1,4 +1,4 @@
-Chocolatey-Scripts
+Windows Setup Script with Chocolatey and Boxstarter
 ==================
 
 
