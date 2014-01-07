@@ -30,15 +30,12 @@ echo "=======================" "Running Setting Scripts" "======================
 [string]$projects=$dev + "\projects"
 [string]$shared=$dev + "\shared"
 
-# hardcode git remote path
-# [string]$remote="r:\picnet\shared_lib.git"
-
-[string]$remote="C:\dev\projects\test\.git"
-
 IF ( !( Test-Path -Path $dev ) ) { mkdir $dev } ElSE { echo "$dev already Exists." }
 IF ( !( Test-Path -Path $projects ) ) { mkdir $projects } ElSE { echo "$projects already Exists." }
 
-echo "Trying to do git clone $remote $shared"
+# hardcode git remote path
+[string]$remote="C:\dev\projects\test\.git"
+
 IF ( Test-Path -Path $shared ) { echo "$shared already Exists." } ElSE { git clone $remote $shared }
 
 # [string]$fileName="windows-best-performance.reg"
