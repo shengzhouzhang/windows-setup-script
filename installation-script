@@ -19,5 +19,3 @@ cinst resharper
 cinst MsSqlServer2012Express
 
 cinst boxstarter.chocolatey
-
-powershell.exe C:\setup.ps1
