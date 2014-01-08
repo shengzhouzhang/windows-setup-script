@@ -27,4 +27,8 @@ echo Restarting themes
 IF ( Test-Path -Path $filePath ) { net stop themes } ELSE { echo "Could not find $filePath." }
 IF ( Test-Path -Path $filePath ) { net start themes } ELSE { echo "Could not find $filePath." }
 
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Disable-UAC
+Enable-RemoteDesktop 
+
 echo "Done. Please review the log info above."
