@@ -4,7 +4,7 @@ Enable-RemoteDesktop
 
 # cinst PowerShell
 
-cinst git
+# cinst git
 
 # cinst GoogleChrome.Canary
 # cinst GoogleChrome.Dev
