@@ -20,4 +20,4 @@ cinst git.install
 
 # cinst boxstarter.chocolatey
 
-powershell.exe -command start /separate "http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/powershell-script"
+powershell.exe -command start "http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/powershell-script"
