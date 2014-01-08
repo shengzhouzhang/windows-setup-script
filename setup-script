@@ -17,7 +17,7 @@ IF ( Test-Path -Path $shared ) { echo "$shared Exists." } ElSE { git clone $remo
 # [string]$filePath=$current + "\" + $fileName
 
 # hardcode reg file path
-[string]$filePath="C:\windows-best-performance.reg"
+[string]$filePath="U:\Boxstarter\windows-best-performance.reg"
 
 echo "Importing $filePath."
 
