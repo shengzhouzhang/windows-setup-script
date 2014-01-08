@@ -19,7 +19,3 @@ cinst resharper
 cinst MsSqlServer2012Express
 
 cinst boxstarter.chocolatey
-
-powershell.exe -command start "http://boxstarter.org/package/nr/url?https://raw.github.com/szha246/windows-setup-script/master/setup-script"
-
-exit
