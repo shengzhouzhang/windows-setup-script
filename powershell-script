@@ -1,3 +1,21 @@
+# cinst PowerShell
+
+# cinst git
+
+# cinst GoogleChrome.Canary
+# cinst GoogleChrome.Dev
+
+# cinst SublimeText3
+
+# cinst java.jdk
+# cinst python
+
+# cinst VisualStudio2013Professional
+# cinst resharper
+# cinst MsSqlServer2012Express
+
+# cinst boxstarter.chocolatey
+
 echo "=======================" "Running Setup Script" "======================="
 
 [string]$dev="C:\dev"
