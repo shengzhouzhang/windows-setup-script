@@ -1,6 +1,3 @@
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
-Disable-UAC
-Enable-RemoteDesktop
 
 cinst PowerShell
 
