@@ -1,8 +1,8 @@
+cinst boxstarter.chocolatey
+
 cinst PowerShell
 
 cinst git
-
-cinst boxstarter.chocolatey
 
 cinst GoogleChrome.Canary
 cinst GoogleChrome.Dev
