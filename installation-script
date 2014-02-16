@@ -1,7 +1,8 @@
-
 cinst PowerShell
 
 cinst git
+
+cinst boxstarter.chocolatey
 
 cinst GoogleChrome.Canary
 cinst GoogleChrome.Dev
@@ -15,4 +16,3 @@ cinst VisualStudio2013Professional
 cinst resharper
 cinst MsSqlServer2012Express
 
-cinst boxstarter.chocolatey
