@@ -1,11 +1,13 @@
 cinst boxstarter.chocolatey
 
-cinst java.jdk
+cinst javaruntime
 
 cinst git
+
+cinst 7zip
 
 cinst notepadplusplus
 
 cinst PowerShell
 
-cinst GoogleChrome.Canary
+cinst GoogleChrome
