@@ -8,6 +8,6 @@ cinst 7zip
 
 cinst notepadplusplus
 
-cinst PowerShell
-
 cinst GoogleChrome
+
+cinst PowerShell
