@@ -1,0 +1,11 @@
+cinst boxstarter.chocolatey
+
+cinst java.jdk
+
+cinst git
+
+cinst notepadplusplus
+
+cinst PowerShell
+
+cinst GoogleChrome.Canary
