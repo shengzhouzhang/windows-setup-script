@@ -12,6 +12,7 @@ cinst SublimeText3
 cinst java.jdk
 cinst python
 
+cinst VisualStudio2012Professional
 cinst VisualStudio2013Professional
 cinst resharper
 cinst MsSqlServer2012Express
