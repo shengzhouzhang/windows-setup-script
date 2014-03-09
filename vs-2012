@@ -1,4 +1,5 @@
-cinst boxstarter.chocolatey
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions
+Enable-RemoteDesktop
 
 cinst git
 
