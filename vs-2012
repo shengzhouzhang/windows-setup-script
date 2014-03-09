@@ -1,3 +1,10 @@
 cinst boxstarter.chocolatey
 
+cinst git
+
+cinst java.jdk
+cinst python
+
+cinst notepadplusplus
+
 cinst VisualStudio2013ExpressWeb
